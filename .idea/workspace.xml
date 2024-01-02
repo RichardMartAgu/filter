@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/mainWindow.fxml" beforeDir="false" />
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Arrancamos la aplicación con la interfaz básica.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +70,18 @@
       <option name="presentableId" value="Default" />
       <updated>1704223166408</updated>
     </task>
+    <task id="LOCAL-00001" summary="Arrancamos la aplicación con la interfaz básica.">
+      <created>1704227743532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704227743532</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Arrancamos la aplicación con la interfaz básica." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrancamos la aplicación con la interfaz básica." />
   </component>
 </project>
