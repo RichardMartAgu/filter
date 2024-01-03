@@ -8,25 +8,16 @@ import javafx.scene.paint.Color;
 
 public class ColorTintFilter {
 
-    public static Image applyColorTintFilter(Image originalImage, Color tint) {
-        int width = (int) originalImage.getWidth();
-        int height = (int) originalImage.getHeight();
+    public static java.awt.Color apply(java.awt.Color color) {
 
-        WritableImage tintedImage = new WritableImage(width, height);
-        PixelReader pixelReader = originalImage.getPixelReader();
-        PixelWriter pixelWriter = tintedImage.getPixelWriter();
+        int tintRed = 255;
+        int tintGreen = 100;
+        int tintBlue = 100;
 
-        for (int x = 0; x < width; x++) {
-            for (int y = 0; y < height; y++) {
-                Color color = pixelReader.getColor(x, y);
-                double tintedRed = color.getRed() * tint.getRed();
-                double tintedGreen = color.getGreen() * tint.getGreen();
-                double tintedBlue = color.getBlue() * tint.getBlue();
+        int red = Math.min(255, color.getRed() + tintRed);
+        int green = Math.min(255, color.getGreen() + tintGreen);
+        int blue = Math.min(255, color.getBlue() + tintBlue);
 
-                pixelWriter.setColor(x, y, Color.color(tintedRed, tintedGreen, tintedBlue));
-            }
-        }
-
-        return tintedImage;
+        return new java.awt.Color(red, green, blue);
     }
 }

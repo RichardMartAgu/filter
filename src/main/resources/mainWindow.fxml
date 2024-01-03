@@ -12,5 +12,6 @@
       <Button fx:id="buttonOpenImage" layoutX="318.0" layoutY="92.0" mnemonicParsing="false" onAction="#openImage" text="Button" />
       <Label fx:id="imagePathLabel" layoutX="318.0" layoutY="64.0" prefHeight="25.0" prefWidth="547.0" text="Label" />
       <TabPane fx:id="tabFilters" layoutX="59.0" layoutY="301.0" prefHeight="335.0" prefWidth="534.0" tabClosingPolicy="UNAVAILABLE" />
+      <Button fx:id="buttonCreateFilter" layoutX="78.0" layoutY="276.0" mnemonicParsing="false" onAction="#createFilter" text="Create filter" />
    </children>
 </AnchorPane>

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Arrancamos la aplicación con la interfaz básica.">
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Podemos selecionar el path de la imagen.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/FilterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/filterPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/mainWindow.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -77,11 +85,19 @@
       <option name="project" value="LOCAL" />
       <updated>1704227743532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Podemos selecionar el path de la imagen.">
+      <created>1704229486109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704229486109</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arrancamos la aplicación con la interfaz básica." />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrancamos la aplicación con la interfaz básica." />
+    <MESSAGE value="Podemos selecionar el path de la imagen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Podemos selecionar el path de la imagen." />
   </component>
 </project>
