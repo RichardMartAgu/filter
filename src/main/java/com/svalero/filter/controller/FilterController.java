@@ -1,6 +1,7 @@
-package com.svalero.filter;
+package com.svalero.filter.controller;
 
 import com.svalero.filter.task.FilterTask;
+import com.svalero.filter.utils.ShowAlert;
 import javafx.concurrent.Worker;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
@@ -33,7 +34,8 @@ public class FilterController implements Initializable {
     @FXML
     private ImageView targetImageView;
     @FXML
-    private Button saveButton;
+    private Button save;
+
 
     private File sourceImage;
     private List<String> selectedFilters;
@@ -52,6 +54,7 @@ public class FilterController implements Initializable {
         try {
             stream = new FileInputStream(sourceImage.getAbsolutePath());
             Image image = new Image(stream);
+
             this.sourceImageView.setImage(image);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -63,14 +66,14 @@ public class FilterController implements Initializable {
             pbProgress.progressProperty().unbind();
             pbProgress.progressProperty().bind(filterTask.progressProperty());
 
-            saveButton.setDisable(true);
+            save.setDisable(true);
 
             filterTask.stateProperty().addListener((observableValue, oldState, newState) -> {
                 if (newState == Worker.State.SUCCEEDED) {
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setContentText("El filtro ha finalizado con éxito");
                     alert.show();
-                    saveButton.setDisable(false);
+
                 }
             });
 
@@ -79,6 +82,7 @@ public class FilterController implements Initializable {
                 Image image = SwingFXUtils.toFXImage(outputImage, null);
 
                 this.targetImageView.setImage(image);
+                save.setDisable(false);
             });
 
             filterTask.messageProperty().addListener((observableValue, oldValue, newValue) -> {
@@ -92,13 +96,26 @@ public class FilterController implements Initializable {
         }
     }
 
+    @FXML
+    private void saveFilteredImage() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save File");
+        Stage stage = (Stage) this.save.getScene().getWindow();
+        File file = fileChooser.showSaveDialog(stage);
+
+        try {
+
+            ImageIO.write(this.outputImage, "png", file);
 
 
-    private void showAlert(String title, String header, String content) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
-        alert.setHeaderText(header);
-        alert.setContentText(content);
-        alert.showAndWait();
+
+            ShowAlert.showAlert("Éxito", "Imagen guardada con éxito", "La imagen se ha guardado correctamente.");
+        } catch (IOException e) {
+            e.printStackTrace();
+            ShowAlert.showAlert("Error", "Error al guardar la imagen", e.getMessage());
+        }
     }
+
+
+
 }

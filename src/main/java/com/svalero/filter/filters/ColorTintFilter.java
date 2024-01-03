@@ -4,13 +4,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.PixelWriter;
 import javafx.scene.image.WritableImage;
-import javafx.scene.paint.Color;
+
+import java.awt.*;
 
 public class ColorTintFilter {
 
-    public static java.awt.Color apply(java.awt.Color color) {
+    public static Color apply(Color color) {
 
-        int tintRed = 255;
+        int tintRed = 155;
         int tintGreen = 100;
         int tintBlue = 100;
 

@@ -1,18 +1,18 @@
 package com.svalero.filter.filters;
 
-import javafx.scene.image.Image;
-import javafx.scene.image.PixelReader;
-import javafx.scene.image.PixelWriter;
-import javafx.scene.image.WritableImage;
-
 import java.awt.*;
 
-public class GrayscaleFilter {
+public class BrighterFilter {
 
     public static Color apply(Color color) {
+        int brightnessFactor = 50;
         int red = color.getRed();
         int green = color.getGreen();
         int blue = color.getBlue();
+
+        red= Math.min(255, red + brightnessFactor);
+        green= Math.min(255, red + brightnessFactor);
+        blue= Math.min(255, red + brightnessFactor);
 
         int gray = (red + green + blue) / 3;
 
@@ -20,4 +20,3 @@ public class GrayscaleFilter {
     }
 
 }
-

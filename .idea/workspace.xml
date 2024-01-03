@@ -4,18 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Podemos selecionar el path de la imagen.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/FilterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/filterPane.fxml" afterDir="false" />
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Ya podemos generar filtros a las imagenes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/Logs/LogEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/ShowAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/FilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/mainWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/filterPane.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,18 +58,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\controller" />
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources" />
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\java\com\svalero\filter" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.svalero.filter.controller" />
       <recent name="com.svalero.filter" />
     </key>
   </component>
@@ -92,12 +98,20 @@
       <option name="project" value="LOCAL" />
       <updated>1704229486109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ya podemos generar filtros a las imagenes.">
+      <created>1704304246539</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704304246539</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arrancamos la aplicación con la interfaz básica." />
     <MESSAGE value="Podemos selecionar el path de la imagen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Podemos selecionar el path de la imagen." />
+    <MESSAGE value="Ya podemos generar filtros a las imagenes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya podemos generar filtros a las imagenes." />
   </component>
 </project>

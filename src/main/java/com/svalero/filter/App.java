@@ -1,5 +1,6 @@
 package com.svalero.filter;
 
+import com.svalero.filter.controller.AppController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.svalero.filter/controller/mainWindow.fxml"));
             loader.setController(new AppController());
             Scene scene = new Scene(loader.load());
             stage.setScene(scene);

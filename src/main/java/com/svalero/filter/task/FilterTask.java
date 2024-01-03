@@ -1,9 +1,6 @@
 package com.svalero.filter.task;
 
-import com.svalero.filter.filters.ColorTintFilter;
-import com.svalero.filter.filters.GrayscaleFilter;
-import com.svalero.filter.filters.InvertColorFilter;
-import com.svalero.filter.filters.SepiaFilter;
+import com.svalero.filter.filters.*;
 import javafx.concurrent.Task;
 
 import javax.imageio.ImageIO;
@@ -28,7 +25,7 @@ public class FilterTask extends Task<BufferedImage> {
         updateMessage("Iniciando Filtro");
         BufferedImage image = ImageIO.read(this.sourceImage);
         int imageSize = image.getHeight() * image.getWidth();
-        float totalProcessed = 0f;
+        float totalProcessed;
         for (int y = 0; y < image.getHeight(); y++) {
             Thread.sleep(20);
             for (int x = 0; x < image.getWidth(); x++) {
@@ -36,29 +33,28 @@ public class FilterTask extends Task<BufferedImage> {
                 for (String selectedFilter : this.selectedFilters) {
                     if (selectedFilter.equals("GrayscaleFilter"))
                         color = GrayscaleFilter.apply(color);
-                    if (selectedFilter.equals("GrayscaleFilter"))
+                    if (selectedFilter.equals("BrighterFilter"))
+                        color = BrighterFilter.apply(color);
+                    if (selectedFilter.equals("SepiaFilter"))
                         color = SepiaFilter.apply(color);
-                    if (selectedFilter.equals("GrayscaleFilter"))
+                    if (selectedFilter.equals("InvertColorFilter"))
                         color = InvertColorFilter.apply(color);
-                    if (selectedFilter.equals("GrayscaleFilter"))
+                    if (selectedFilter.equals("ColorTintFilter"))
                         color = ColorTintFilter.apply(color);
 
                 }
                 if (color != null)
                     image.setRGB(x, y, color.getRGB());
+
+                totalProcessedPixel++;
+
+                updateProgress(totalProcessedPixel, imageSize);
+                totalProcessed = totalProcessedPixel / (float) imageSize;
+                String totalProcessedFormatted = String.format("%.2f", 100 * totalProcessed);
+                updateMessage(totalProcessedFormatted + "%");
             }
-            totalProcessedPixel++;
-
-            updateProgress(totalProcessedPixel, imageSize);
-            totalProcessed = totalProcessedPixel / (float) imageSize;
-            String totalProcessedFormatted = String.format("%1f", 100 * totalProcessed);
-            updateMessage(totalProcessedFormatted + "%");
         }
-
-        String outputName = this.sourceImage.getName().substring(0, this.sourceImage.getName().length());
-        File output = new File(outputName);
-        ImageIO.write(image, "png", output);
-        updateProgress(1, 1);
+        updateProgress(totalProcessedPixel, imageSize);
         updateMessage("100%");
         return image;
     }
