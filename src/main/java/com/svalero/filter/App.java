@@ -27,7 +27,6 @@ public class App extends Application {
         stage.show();
     }
 
-
     public void stop() throws Exception {
         System.out.println("Goodbye!");
         super.stop();

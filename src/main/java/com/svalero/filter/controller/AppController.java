@@ -62,7 +62,6 @@ public class AppController implements Initializable {
     private File file;
     private File selectedDirectory;
     private FilterFile filterFile = new FilterFile();
-    private ObservableList<String> data = FXCollections.observableArrayList();
 
 
     public AppController() {
@@ -124,7 +123,6 @@ public class AppController implements Initializable {
         File sourceFile = new File(imagePathLabel.getText());
         System.out.println(sourceFile + "LA IMAGEN O CARPETA");
 
-
         System.out.println(this.filterListView.getSelectionModel().getSelectedItems());
         List<String> selectedFilters = new ArrayList<String>(this.filterListView.getSelectionModel().getSelectedItems());
 
@@ -143,7 +141,6 @@ public class AppController implements Initializable {
     private void createTask(File sourceFile, List<String> selectedFilters) throws IOException {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.svalero.filter/controller/filterPane.fxml"));
-
 
         FilterController filterController = new FilterController(sourceFile, selectedFilters);
 

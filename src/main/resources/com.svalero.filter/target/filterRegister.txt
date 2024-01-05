@@ -110,3 +110,12 @@ istockphoto-816134422-1024x1024.jpg	BrighterFilter	05/01/2024 19:59:47
 avion.jpg	InvertColorFilter	05/01/2024 20:00:47
 descarga.jpeg	SepiaFilter	05/01/2024 20:03:18
 descarga.jpeg	SepiaFilter	05/01/2024 20:04:44
+avion.jpg	InvertColorFilter	05/01/2024 20:18:01
+descarga.jpeg	InvertColorFilter	05/01/2024 20:18:01
+istockphoto-816134422-1024x1024.jpg	InvertColorFilter	05/01/2024 20:18:01
+avion.jpg	InvertColorFilter	05/01/2024 20:18:26
+avion.jpg	InvertColorFilter	05/01/2024 20:20:10
+avion.jpg	BrighterFilter	05/01/2024 20:21:27
+avion.jpg	GrayscaleFilter	05/01/2024 20:22:47
+descarga.jpeg	GrayscaleFilter	05/01/2024 20:22:47
+istockphoto-816134422-1024x1024.jpg	GrayscaleFilter	05/01/2024 20:22:47

@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Añadimos una miniatura y guardamos la imagen al final del filtro.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/model/FilterItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/FilterFile.java" afterDir="false" />
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Añadimos un comprobador de imágenes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/ShowAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/ShowAlert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +53,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/richa/IdeaProjects/segundodam/filter/src/main/resources/com.svalero.filter/target/image&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\target\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\controller" />
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources" />
@@ -119,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704316146519</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Añadimos la opción de abrir carpetas.">
+      <created>1704482003253</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704482003253</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Añadimos un comprobador de imágenes.">
+      <created>1704482115588</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704482115588</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +137,8 @@
     <MESSAGE value="Podemos selecionar el path de la imagen." />
     <MESSAGE value="Ya podemos generar filtros a las imagenes." />
     <MESSAGE value="Añadimos una miniatura y guardamos la imagen al final del filtro." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadimos una miniatura y guardamos la imagen al final del filtro." />
+    <MESSAGE value="Añadimos la opción de abrir carpetas." />
+    <MESSAGE value="Añadimos un comprobador de imágenes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadimos un comprobador de imágenes." />
   </component>
 </project>

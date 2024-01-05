@@ -2,7 +2,6 @@ package com.svalero.filter.task;
 
 import com.svalero.filter.filters.*;
 import javafx.concurrent.Task;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -45,8 +44,7 @@ public class FilterTask extends Task<BufferedImage> {
                         color = ColorTintFilter.apply(color);
 
                 }
-                if (color != null)
-                    image.setRGB(x, y, color.getRGB());
+                image.setRGB(x, y, color.getRGB());
 
                 totalProcessedPixel++;
 
