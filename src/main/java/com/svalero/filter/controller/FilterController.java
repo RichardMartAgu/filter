@@ -6,7 +6,6 @@ import javafx.concurrent.Worker;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
@@ -16,7 +15,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import javax.imageio.ImageIO;
-import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.lang.reflect.MalformedParametersException;
@@ -46,13 +44,16 @@ public class FilterController implements Initializable {
         this.sourceImage = sourceImage;
         this.selectedFilters = selectedFilters;
         this.outputImage = null;
+
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         InputStream stream;
         try {
+            System.out.println(sourceImage + "FILTER");
             stream = new FileInputStream(sourceImage.getAbsolutePath());
+            System.out.println(stream + "STREAM");
             Image image = new Image(stream);
 
             this.sourceImageView.setImage(image);
@@ -70,9 +71,7 @@ public class FilterController implements Initializable {
 
             filterTask.stateProperty().addListener((observableValue, oldState, newState) -> {
                 if (newState == Worker.State.SUCCEEDED) {
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setContentText("El filtro ha finalizado con éxito");
-                    alert.show();
+                    ShowAlert.showInformationAlert("Información", "Información", "El filtro se ha realizado con éxito");
 
                 }
             });
@@ -100,6 +99,11 @@ public class FilterController implements Initializable {
     private void saveFilteredImage() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Save File");
+
+        fileChooser.setInitialFileName("imagen_editada");
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Archivos PNG (*.png)", "*.png");
+        fileChooser.getExtensionFilters().add(extFilter);
+        fileChooser.setInitialDirectory(new File("C:/Users/richa/IdeaProjects/segundodam/filter/src/main/resources/com.svalero.filter/target/image"));
         Stage stage = (Stage) this.save.getScene().getWindow();
         File file = fileChooser.showSaveDialog(stage);
 
@@ -108,14 +112,10 @@ public class FilterController implements Initializable {
             ImageIO.write(this.outputImage, "png", file);
 
 
-
-            ShowAlert.showAlert("Éxito", "Imagen guardada con éxito", "La imagen se ha guardado correctamente.");
+            ShowAlert.showInformationAlert("Información", "Información", "La imagen se ha guardado correctamente.");
         } catch (IOException e) {
             e.printStackTrace();
-            ShowAlert.showAlert("Error", "Error al guardar la imagen", e.getMessage());
+            ShowAlert.showErrorAlert("Error", "Error al guardar la imagen", e.getMessage());
         }
     }
-
-
-
 }

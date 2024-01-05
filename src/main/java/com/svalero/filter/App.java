@@ -19,12 +19,12 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.svalero.filter/controller/mainWindow.fxml"));
-            loader.setController(new AppController());
-            Scene scene = new Scene(loader.load());
-            stage.setScene(scene);
-            stage.setTitle("Filters Aplication");
-            stage.show();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.svalero.filter/controller/mainWindow.fxml"));
+        loader.setController(new AppController());
+        Scene scene = new Scene(loader.load());
+        stage.setScene(scene);
+        stage.setTitle("Filters Aplication");
+        stage.show();
     }
 
 

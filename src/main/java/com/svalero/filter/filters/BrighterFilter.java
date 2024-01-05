@@ -10,9 +10,9 @@ public class BrighterFilter {
         int green = color.getGreen();
         int blue = color.getBlue();
 
-        red= Math.min(255, red + brightnessFactor);
-        green= Math.min(255, red + brightnessFactor);
-        blue= Math.min(255, red + brightnessFactor);
+        red = Math.min(255, red + brightnessFactor);
+        green = Math.min(255, red + brightnessFactor);
+        blue = Math.min(255, red + brightnessFactor);
 
         int gray = (red + green + blue) / 3;
 

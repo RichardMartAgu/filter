@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Ya podemos generar filtros a las imagenes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/Logs/LogEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/ShowAlert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Añadimos una miniatura y guardamos la imagen al final del filtro.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/model/FilterItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/FilterFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/FilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/ColorTintFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/GrayscaleFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/InvertColorFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/SepiaFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/filterPane.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/ShowAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/utils/ShowAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,13 +105,28 @@
       <option name="project" value="LOCAL" />
       <updated>1704304246539</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Añadimos una miniatura y guardamos la imagen al final del filtro.">
+      <created>1704316126360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704316126360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Añadimos una miniatura y guardamos la imagen al final del filtro.">
+      <created>1704316146519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704316146519</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arrancamos la aplicación con la interfaz básica." />
     <MESSAGE value="Podemos selecionar el path de la imagen." />
     <MESSAGE value="Ya podemos generar filtros a las imagenes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ya podemos generar filtros a las imagenes." />
+    <MESSAGE value="Añadimos una miniatura y guardamos la imagen al final del filtro." />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadimos una miniatura y guardamos la imagen al final del filtro." />
   </component>
 </project>

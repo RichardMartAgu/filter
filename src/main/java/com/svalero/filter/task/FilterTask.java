@@ -21,11 +21,13 @@ public class FilterTask extends Task<BufferedImage> {
 
     @Override
     protected BufferedImage call() throws Exception {
+
         int totalProcessedPixel = 0;
         updateMessage("Iniciando Filtro");
         BufferedImage image = ImageIO.read(this.sourceImage);
         int imageSize = image.getHeight() * image.getWidth();
         float totalProcessed;
+
         for (int y = 0; y < image.getHeight(); y++) {
             Thread.sleep(20);
             for (int x = 0; x < image.getWidth(); x++) {

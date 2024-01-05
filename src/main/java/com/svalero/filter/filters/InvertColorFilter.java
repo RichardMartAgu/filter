@@ -1,6 +1,5 @@
 package com.svalero.filter.filters;
 
-
 import java.awt.*;
 
 public class InvertColorFilter {

@@ -1,10 +1,5 @@
 package com.svalero.filter.filters;
 
-import javafx.scene.image.Image;
-import javafx.scene.image.PixelReader;
-import javafx.scene.image.PixelWriter;
-import javafx.scene.image.WritableImage;
-
 import java.awt.*;
 
 public class GrayscaleFilter {
