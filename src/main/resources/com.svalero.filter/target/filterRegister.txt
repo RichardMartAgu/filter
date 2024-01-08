@@ -1,21 +1,3 @@
-descarga.jpeg	InvertColorFilter	04/01/2024
-descarga.jpeg	SepiaFilter	04/01/2024
-descarga.jpeg	InvertColorFilter	04/01/2024
-descarga.jpeg	GrayscaleFilter	04/01/2024
-descarga.jpeg	SepiaFilter	InvertColorFilter	ColorTintFilter	04/01/2024
-descarga.jpeg	SepiaFilter	InvertColorFilter	ColorTintFilter	05/01/2024
-avion.jpg	InvertColorFilter	05/01/2024
-avion.jpg	BrighterFilter	SepiaFilter	BrighterFilter	SepiaFilter	05/01/2024
-avion.jpg	BrighterFilter,SepiaFilter,InvertColorFilter	05/01/2024
-avion.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	05/01/2024
-avion.jpg	SepiaFilter	05/01/2024
-avion.jpg	InvertColorFilter	05/01/2024
-avion.jpg	InvertColorFilter,ColorTintFilter	05/01/2024
-avion.jpg	BrighterFilter,SepiaFilter,InvertColorFilter	05/01/2024
-avion.jpg	BrighterFilter,SepiaFilter,InvertColorFilter	05/01/2024 11:34:29
-Nueva carpeta	SepiaFilter,InvertColorFilter	05/01/2024 11:42:06
-avion.jpg	SepiaFilter	05/01/2024 13:00:33
-avion.jpg	SepiaFilter	05/01/2024 13:00:52
 avion.jpg	InvertColorFilter	05/01/2024 13:14:45
 avion.jpg	InvertColorFilter	05/01/2024 13:15:00
 avion.jpg	InvertColorFilter	05/01/2024 13:40:22
@@ -119,3 +101,30 @@ avion.jpg	BrighterFilter	05/01/2024 20:21:27
 avion.jpg	GrayscaleFilter	05/01/2024 20:22:47
 descarga.jpeg	GrayscaleFilter	05/01/2024 20:22:47
 istockphoto-816134422-1024x1024.jpg	GrayscaleFilter	05/01/2024 20:22:47
+avion.jpg	SepiaFilter	08/01/2024 16:32:16
+avion.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	08/01/2024 18:47:45
+imagen_editada2.png		08/01/2024 18:50:54
+avion.jpg	SepiaFilter,InvertColorFilter	08/01/2024 18:51:56
+avion.jpg	InvertColorFilter	08/01/2024 18:54:12
+avion.jpg		08/01/2024 18:54:57
+avion.jpg	InvertColorFilter	08/01/2024 18:55:57
+avion.jpg	SepiaFilter	08/01/2024 18:57:18
+avion.jpg	InvertColorFilter	08/01/2024 19:02:28
+avion.jpg	SepiaFilter	08/01/2024 19:08:31
+avion.jpg	ColorTintFilter	08/01/2024 19:09:25
+avion.jpg	SepiaFilter	08/01/2024 19:10:27
+avion.jpg	InvertColorFilter	08/01/2024 19:55:54
+avion.jpg	InvertColorFilter	08/01/2024 19:56:53
+avion.jpg	SepiaFilter	08/01/2024 19:57:57
+avion.jpg	InvertColorFilter	08/01/2024 20:01:04
+camara-612x612.jpg	SepiaFilter	08/01/2024 20:05:10
+avion.jpg	InvertColorFilter	08/01/2024 20:11:48
+avion.jpg	SepiaFilter	08/01/2024 20:21:27
+avion.jpg	GrayscaleFilter	08/01/2024 20:21:52
+descarga.jpeg	GrayscaleFilter	08/01/2024 20:21:52
+istockphoto-816134422-1024x1024.jpg	GrayscaleFilter	08/01/2024 20:21:52
+avion.jpg	GrayscaleFilter	08/01/2024 20:23:23
+avion.jpg	SepiaFilter	08/01/2024 20:23:37
+descarga.jpeg	SepiaFilter	08/01/2024 20:23:37
+istockphoto-816134422-1024x1024.jpg	SepiaFilter	08/01/2024 20:23:37
+avion.jpg	ColorTintFilter	08/01/2024 20:27:13

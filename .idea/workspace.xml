@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Añadimos un comprobador de imágenes.">
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Revisar.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/SplashScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/splashScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/image/images/camara-612x612.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/image/images/camara-png.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/mainWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" afterDir="false" />
@@ -50,19 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/richa/IdeaProjects/segundodam/filter/src/main/resources/com.svalero.filter/target/image&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/richa/IdeaProjects/segundodam/filter"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\target\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\target\image\drawable" />
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\controller" />
+      <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources\com.svalero.filter\style" />
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\resources" />
       <recent name="C:\Users\richa\IdeaProjects\segundodam\filter\src\main\java\com\svalero\filter" />
     </key>
@@ -129,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704482115588</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Revisar.">
+      <created>1704482658716</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704482658716</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +152,7 @@
     <MESSAGE value="Añadimos una miniatura y guardamos la imagen al final del filtro." />
     <MESSAGE value="Añadimos la opción de abrir carpetas." />
     <MESSAGE value="Añadimos un comprobador de imágenes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadimos un comprobador de imágenes." />
+    <MESSAGE value="Revisar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisar." />
   </component>
 </project>

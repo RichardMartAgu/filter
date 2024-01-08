@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorSplash" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="568.0" styleClass="Anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="217.0" fitWidth="562.0" layoutX="2.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../target/image/images/camara-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="86.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelEstilizado" text="Welcome to Filter APP" textAlignment="CENTER" wrappingWidth="419.73097801208496">
+         <font>
+            <Font />
+         </font>
+      </Text>
+      <Label layoutX="439.0" layoutY="320.0" prefHeight="24.0" prefWidth="134.0" text="Ricard Martinez">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

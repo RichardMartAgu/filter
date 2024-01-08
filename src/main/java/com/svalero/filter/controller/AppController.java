@@ -169,8 +169,11 @@ public class AppController implements Initializable {
 
         ShowAlert.showAlert(historyBtn.getScene().getWindow(), "Registrado correctamente en el Historial", 3);
 
-        File[] imageFiles = selectedDirectory.listFiles(IsImage::isImage);
-        System.out.println(imageFiles);
+        if (selectedDirectory != null) {
+            File[] imageFiles = selectedDirectory.listFiles(IsImage::isImage);
+
+            System.out.println(imageFiles);
+        }
     }
 
     @FXML
