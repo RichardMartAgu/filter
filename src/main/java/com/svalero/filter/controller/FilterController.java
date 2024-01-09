@@ -44,11 +44,12 @@ public class FilterController implements Initializable {
         this.sourceImage = sourceImage;
         this.selectedFilters = selectedFilters;
         this.outputImage = null;
-
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+
         InputStream stream;
         try {
             System.out.println(sourceImage + "FILTER");
@@ -118,4 +119,5 @@ public class FilterController implements Initializable {
             ShowAlert.showErrorAlert("Error", "Error al guardar la imagen", e.getMessage());
         }
     }
+
 }

@@ -128,3 +128,34 @@ avion.jpg	SepiaFilter	08/01/2024 20:23:37
 descarga.jpeg	SepiaFilter	08/01/2024 20:23:37
 istockphoto-816134422-1024x1024.jpg	SepiaFilter	08/01/2024 20:23:37
 avion.jpg	ColorTintFilter	08/01/2024 20:27:13
+avion.jpg	GrayscaleFilter	08/01/2024 22:08:00
+avion.jpg	GrayscaleFilter	08/01/2024 22:08:03
+avion.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	08/01/2024 22:08:23
+descarga.jpeg	GrayscaleFilter,BrighterFilter,SepiaFilter	08/01/2024 22:08:23
+istockphoto-816134422-1024x1024.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	08/01/2024 22:08:23
+avion.jpg	SepiaFilter	09/01/2024 18:18:07
+avion.jpg	SepiaFilter	09/01/2024 18:18:10
+avion.jpg	InvertColorFilter	09/01/2024 18:18:54
+avion.jpg	InvertColorFilter	09/01/2024 18:23:14
+avion.jpg	InvertColorFilter	09/01/2024 18:23:18
+avion.jpg	InvertColorFilter	09/01/2024 18:23:19
+avion.jpg	InvertColorFilter	09/01/2024 18:28:53
+avion.jpg	SepiaFilter	09/01/2024 18:29:28
+avion.jpg	SepiaFilter	09/01/2024 18:29:35
+avion.jpg	SepiaFilter	09/01/2024 18:29:39
+avion.jpg	SepiaFilter	09/01/2024 18:29:44
+avion.jpg	SepiaFilter	09/01/2024 18:32:04
+avion.jpg		09/01/2024 18:32:39
+avion.jpg		09/01/2024 18:32:42
+avion.jpg	SepiaFilter	09/01/2024 18:33:09
+avion.jpg	SepiaFilter	09/01/2024 18:33:11
+avion.jpg	SepiaFilter	09/01/2024 18:34:02
+avion.jpg	InvertColorFilter	09/01/2024 18:34:50
+avion.jpg	BrighterFilter	09/01/2024 18:35:33
+avion.jpg	BrighterFilter	09/01/2024 18:35:43
+avion.jpg	SepiaFilter	09/01/2024 18:39:40
+Prueba	SepiaFilter	09/01/2024 18:39:52
+avion.jpg	SepiaFilter	09/01/2024 18:39:52
+Prueba	SepiaFilter	09/01/2024 18:39:52
+descarga.jpeg	SepiaFilter	09/01/2024 18:39:52
+avion.jpg		09/01/2024 18:46:15

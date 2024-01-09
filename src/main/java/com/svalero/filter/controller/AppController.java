@@ -58,6 +58,9 @@ public class AppController implements Initializable {
     private TableColumn<FilterItem, String> filtersColumn;
 
     @FXML
+    private ChoiceBox<Integer> maxTabsChoiceBox;
+
+    @FXML
     private TableColumn<FilterItem, String> dateColumn;
     private File file;
     private File selectedDirectory;
@@ -79,6 +82,10 @@ public class AppController implements Initializable {
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("Name"));
         filtersColumn.setCellValueFactory(new PropertyValueFactory<>("filters"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+
+        ObservableList<Integer> choices = FXCollections.observableArrayList(1, 2, 3, 4, 5);
+        maxTabsChoiceBox.setItems(choices);
+        maxTabsChoiceBox.setValue(5);
 
     }
 
@@ -112,6 +119,7 @@ public class AppController implements Initializable {
         selectedDirectory = directoryChooser.showDialog(stage);
         if (selectedDirectory != null) {
             imagePathLabel.setText(selectedDirectory.getAbsolutePath());
+            thumbnailImageView.setImage(null);
             System.out.println(selectedDirectory);
 
         }
@@ -126,16 +134,29 @@ public class AppController implements Initializable {
         System.out.println(this.filterListView.getSelectionModel().getSelectedItems());
         List<String> selectedFilters = new ArrayList<String>(this.filterListView.getSelectionModel().getSelectedItems());
 
+        int maxTabs = maxTabsChoiceBox.getValue();
+
         if (IsImage.isImage(sourceFile)) {
-            createTask(sourceFile, selectedFilters);
+            if (tabFilters.getTabs().size() < maxTabs){
+                createTask(sourceFile, selectedFilters);
+        } else {
+            ShowAlert.showErrorAlert("Information","DEMASIADAS PESTAÑAS","máximo de pestañas alcanzado");
+        }
         } else if (sourceFile.isDirectory()) {
             File[] files = sourceFile.listFiles(IsImage::isImage);
             if (files != null) {
                 for (File file : files) {
+                    if (tabFilters.getTabs().size() < maxTabs) {
+                        createTask(sourceFile, selectedFilters);
+                    }else {
+                        ShowAlert.showErrorAlert("Information","DEMASIADAS PESTAÑAS","máximo de pestañas alcanzado");
+                        break;
+                    }
                     createTask(file, selectedFilters);
                 }
             }
         }
+
     }
 
     private void createTask(File sourceFile, List<String> selectedFilters) throws IOException {
@@ -174,6 +195,7 @@ public class AppController implements Initializable {
 
             System.out.println(imageFiles);
         }
+
     }
 
     @FXML
@@ -185,4 +207,5 @@ public class AppController implements Initializable {
         List<FilterItem> filterItems = filterFile.getFilterItemsFromFile(filePath);
         tableView.getItems().addAll(filterItems);
     }
+
 }
