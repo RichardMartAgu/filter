@@ -27,6 +27,8 @@ public class FilterTask extends Task<BufferedImage> {
         int imageSize = image.getHeight() * image.getWidth();
         float totalProcessed;
 
+//        Iniciamos los filtros elegidos
+
         for (int y = 0; y < image.getHeight(); y++) {
             Thread.sleep(20);
             for (int x = 0; x < image.getWidth(); x++) {
@@ -45,6 +47,8 @@ public class FilterTask extends Task<BufferedImage> {
 
                 }
                 image.setRGB(x, y, color.getRGB());
+
+//                Configuracion de barra de progreso
 
                 totalProcessedPixel++;
 

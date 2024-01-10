@@ -32,10 +32,11 @@ public class ShowAlert {
 
         popup.getContent().add(popupContent);
 
+
         PauseTransition delay = new PauseTransition(Duration.seconds(seconds));
         delay.setOnFinished(event -> popup.hide());
 
-        popup.show(owner);
+        popup.show(owner, 950, 70);
         delay.play();
     }
 }

@@ -1,6 +1,5 @@
 package com.svalero.filter.controller;
 
-
 import com.svalero.filter.model.FilterItem;
 import com.svalero.filter.utils.FilterFile;
 import com.svalero.filter.utils.ShowAlert;
@@ -79,9 +78,13 @@ public class AppController implements Initializable {
         this.filterListView.getItems().addAll("GrayscaleFilter", "BrighterFilter", "SepiaFilter", "InvertColorFilter", "ColorTintFilter");
         this.filterListView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
+//        Inicializa el tableView del historial
+
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("Name"));
         filtersColumn.setCellValueFactory(new PropertyValueFactory<>("filters"));
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+
+//        Inicializa el maxTabsChoiceBox para elegir un máximo de tabs
 
         ObservableList<Integer> choices = FXCollections.observableArrayList(1, 2, 3, 4, 5);
         maxTabsChoiceBox.setItems(choices);
@@ -89,25 +92,29 @@ public class AppController implements Initializable {
 
     }
 
-    @FXML
     public void openImage(ActionEvent event) {
         Stage stage = (Stage) this.buttonOpenFolder.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("C:/Users/richa/IdeaProjects/segundodam/filter/src/main/resources/com.svalero.filter/target/image"));
         File selectedFile = fileChooser.showOpenDialog(stage);
         if (selectedFile != null) {
-            this.file = selectedFile;
-            this.imagePathLabel.setText(this.file.getAbsolutePath());
+            if (IsImage.isImage(selectedFile)) {
+                this.file = selectedFile;
+                this.imagePathLabel.setText(this.file.getAbsolutePath());
 
-            try {
-                Image image = new Image(selectedFile.toURI().toString());
-                thumbnailImageView.setImage(image);
-            } catch (Exception e) {
-                e.printStackTrace();
-                ShowAlert.showErrorAlert("Error", "Error al cargar la imagen", e.getMessage());
+                try {
+                    Image image = new Image(selectedFile.toURI().toString());
+                    thumbnailImageView.setImage(image);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    ShowAlert.showErrorAlert("Error", "Error al cargar la imagen", e.getMessage());
+                }
+            } else {
+                ShowAlert.showErrorAlert("Error", "Tipo de archivo no admitido", "Selecciona un archivo de imagen válido.");
             }
         }
     }
+
 
     @FXML
     public void openFolder(ActionEvent event) {
@@ -125,6 +132,11 @@ public class AppController implements Initializable {
         }
     }
 
+    public void setImage(Image image, String path) {
+        this.thumbnailImageView.setImage(image);
+        this.imagePathLabel.setText(path);
+    }
+
     @FXML
     private void createFilter(ActionEvent event) throws IOException {
 
@@ -133,26 +145,29 @@ public class AppController implements Initializable {
 
         System.out.println(this.filterListView.getSelectionModel().getSelectedItems());
         List<String> selectedFilters = new ArrayList<String>(this.filterListView.getSelectionModel().getSelectedItems());
+        if (selectedFilters.isEmpty()) {
+            ShowAlert.showErrorAlert("Information", "Filtros no seleccionados", "Por favor, selecciona al menos un filtro.");
+            return;
+        }
 
         int maxTabs = maxTabsChoiceBox.getValue();
 
         if (IsImage.isImage(sourceFile)) {
-            if (tabFilters.getTabs().size() < maxTabs){
+            if (tabFilters.getTabs().size() < maxTabs) {
                 createTask(sourceFile, selectedFilters);
-        } else {
-            ShowAlert.showErrorAlert("Information","DEMASIADAS PESTAÑAS","máximo de pestañas alcanzado");
-        }
+            } else {
+                ShowAlert.showErrorAlert("Information", "DEMASIADAS PESTAÑAS", "máximo de pestañas alcanzado");
+            }
         } else if (sourceFile.isDirectory()) {
             File[] files = sourceFile.listFiles(IsImage::isImage);
             if (files != null) {
                 for (File file : files) {
                     if (tabFilters.getTabs().size() < maxTabs) {
-                        createTask(sourceFile, selectedFilters);
-                    }else {
-                        ShowAlert.showErrorAlert("Information","DEMASIADAS PESTAÑAS","máximo de pestañas alcanzado");
+                        createTask(file, selectedFilters);
+                    } else {
+                        ShowAlert.showErrorAlert("Information", "DEMASIADAS PESTAÑAS", "máximo de pestañas alcanzado");
                         break;
                     }
-                    createTask(file, selectedFilters);
                 }
             }
         }
@@ -163,14 +178,15 @@ public class AppController implements Initializable {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.svalero.filter/controller/filterPane.fxml"));
 
-        FilterController filterController = new FilterController(sourceFile, selectedFilters);
+        FilterController filterController = new FilterController(sourceFile, selectedFilters, this);
 
         loader.setController(filterController);
 
         String fileName = sourceFile.getName();
-        System.out.println(fileName + "  APPController");
         AnchorPane anchorPane = loader.load();
         tabFilters.getTabs().add(new Tab(fileName, anchorPane));
+
+//        Obtenemos datos para el historial
 
         filterFile.createNewFile();
 
@@ -190,13 +206,8 @@ public class AppController implements Initializable {
 
         ShowAlert.showAlert(historyBtn.getScene().getWindow(), "Registrado correctamente en el Historial", 3);
 
-        if (selectedDirectory != null) {
-            File[] imageFiles = selectedDirectory.listFiles(IsImage::isImage);
-
-            System.out.println(imageFiles);
-        }
-
     }
+
 
     @FXML
     void historyTable(ActionEvent event) {
@@ -207,5 +218,4 @@ public class AppController implements Initializable {
         List<FilterItem> filterItems = filterFile.getFilterItemsFromFile(filePath);
         tableView.getItems().addAll(filterItems);
     }
-
 }

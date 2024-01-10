@@ -4,7 +4,6 @@ import com.svalero.filter.controller.AppController;
 import com.svalero.filter.controller.SplashScreenController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -28,7 +27,6 @@ public class App extends Application {
 
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
-
         stage.show();
 
         new Thread(() -> {

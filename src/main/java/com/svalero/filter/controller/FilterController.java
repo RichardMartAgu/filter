@@ -33,22 +33,25 @@ public class FilterController implements Initializable {
     private ImageView targetImageView;
     @FXML
     private Button save;
+    @FXML
+    private Button moreFilters;
 
 
     private File sourceImage;
     private List<String> selectedFilters;
     private FilterTask filterTask;
     private BufferedImage outputImage;
+    private AppController appController;
 
-    public FilterController(File sourceImage, List<String> selectedFilters) {
+    public FilterController(File sourceImage, List<String> selectedFilters, AppController appController) {
         this.sourceImage = sourceImage;
         this.selectedFilters = selectedFilters;
+        this.appController = appController;
         this.outputImage = null;
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
 
         InputStream stream;
         try {
@@ -69,6 +72,7 @@ public class FilterController implements Initializable {
             pbProgress.progressProperty().bind(filterTask.progressProperty());
 
             save.setDisable(true);
+            moreFilters.setDisable(true);
 
             filterTask.stateProperty().addListener((observableValue, oldState, newState) -> {
                 if (newState == Worker.State.SUCCEEDED) {
@@ -83,6 +87,8 @@ public class FilterController implements Initializable {
 
                 this.targetImageView.setImage(image);
                 save.setDisable(false);
+                moreFilters.setDisable(false);
+
             });
 
             filterTask.messageProperty().addListener((observableValue, oldValue, newValue) -> {
@@ -111,8 +117,6 @@ public class FilterController implements Initializable {
         try {
 
             ImageIO.write(this.outputImage, "png", file);
-
-
             ShowAlert.showInformationAlert("Información", "Información", "La imagen se ha guardado correctamente.");
         } catch (IOException e) {
             e.printStackTrace();
@@ -120,4 +124,22 @@ public class FilterController implements Initializable {
         }
     }
 
+    @FXML
+    private void copyImageToAppController() {
+
+        if (this.outputImage != null) {
+            try {
+                File tempFile = File.createTempFile("filtered_image", ".png");
+                ImageIO.write(this.outputImage, "png", tempFile);
+                String tempFilePath = tempFile.getAbsolutePath();
+                appController.setImage(SwingFXUtils.toFXImage(this.outputImage, null), tempFilePath);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
+
+
+

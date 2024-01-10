@@ -12,4 +12,3 @@ public class InvertColorFilter {
         return new java.awt.Color(red, green, blue);
     }
 }
-
