@@ -6,20 +6,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane styleClass="Anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane styleClass="Anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Label fx:id="lbStatus" layoutX="33.0" layoutY="304.0" prefHeight="11.0" prefWidth="548.0"
-               stylesheets="@style.css"/>
-        <ProgressBar fx:id="pbProgress" layoutX="33.0" layoutY="286.0" prefHeight="18.0" prefWidth="449.0"
-                     progress="0.0" styleClass="labelEstilizado"/>
-        <ImageView fx:id="sourceImageView" fitHeight="250.0" fitWidth="250.0" layoutX="20.0" layoutY="23.0"
-                   pickOnBounds="true" preserveRatio="true"/>
-        <ImageView fx:id="targetImageView" fitHeight="250.0" fitWidth="250.0" layoutX="307.0" layoutY="23.0"
-                   pickOnBounds="true" preserveRatio="true"/>
-        <Button fx:id="save" layoutX="520.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveFilteredImage"
-                text="Guardar"/>
-        <Button fx:id="moreFilters" layoutX="514.0" layoutY="257.0" mnemonicParsing="false"
-                onAction="#copyImageToAppController" text="Más filtros"/>
+        <Label fx:id="lbStatus" layoutX="33.0" layoutY="304.0" prefHeight="11.0" prefWidth="548.0" stylesheets="@style.css" />
+        <ProgressBar fx:id="pbProgress" layoutX="33.0" layoutY="286.0" prefHeight="18.0" prefWidth="449.0" progress="0.0" styleClass="labelEstilizado" />
+        <ImageView fx:id="sourceImageView" fitHeight="250.0" fitWidth="250.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="targetImageView" fitHeight="250.0" fitWidth="250.0" layoutX="307.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="save" layoutX="520.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveFilteredImage" text="Guardar" />
+        <Button fx:id="moreFilters" layoutX="514.0" layoutY="257.0" mnemonicParsing="false" onAction="#copyImageToAppController" text="Más filtros" />
+      <Button fx:id="undoButton" layoutX="516.0" layoutY="215.0" mnemonicParsing="false" onAction="#undoFilters" text="Deshacer" />
     </children>
 </AnchorPane>

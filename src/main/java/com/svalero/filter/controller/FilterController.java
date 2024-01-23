@@ -15,6 +15,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import javax.imageio.ImageIO;
+import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.lang.reflect.MalformedParametersException;
@@ -35,6 +36,8 @@ public class FilterController implements Initializable {
     private Button save;
     @FXML
     private Button moreFilters;
+    @FXML
+    private Button undoButton;
 
 
     private File sourceImage;
@@ -72,6 +75,7 @@ public class FilterController implements Initializable {
             pbProgress.progressProperty().bind(filterTask.progressProperty());
 
             save.setDisable(true);
+            undoButton.setDisable(true);
             moreFilters.setDisable(true);
 
             filterTask.stateProperty().addListener((observableValue, oldState, newState) -> {
@@ -87,6 +91,7 @@ public class FilterController implements Initializable {
 
                 this.targetImageView.setImage(image);
                 save.setDisable(false);
+                undoButton.setDisable(false);
                 moreFilters.setDisable(false);
 
             });
@@ -121,6 +126,20 @@ public class FilterController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
             ShowAlert.showErrorAlert("Error", "Error al guardar la imagen", e.getMessage());
+        }
+    }
+
+    @FXML
+    private void undoFilters() {
+        try {
+            BufferedImage originalImage = ImageIO.read(new FileInputStream(this.sourceImage));
+            Image image = SwingFXUtils.toFXImage(originalImage, null);
+            this.targetImageView.setImage(image);
+            this.undoButton.setDisable(true);
+            this.outputImage = originalImage;
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
