@@ -2,6 +2,7 @@ package com.svalero.filter.task;
 
 import com.svalero.filter.filters.*;
 import javafx.concurrent.Task;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -48,7 +49,7 @@ public class FilterTask extends Task<BufferedImage> {
                 }
                 image.setRGB(x, y, color.getRGB());
 
-//                Configuracion de barra de progreso
+//                Configuración de barra de progreso
 
                 totalProcessedPixel++;
 

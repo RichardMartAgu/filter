@@ -15,7 +15,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import javax.imageio.ImageIO;
-import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.lang.reflect.MalformedParametersException;
@@ -152,6 +151,7 @@ public class FilterController implements Initializable {
                 ImageIO.write(this.outputImage, "png", tempFile);
                 String tempFilePath = tempFile.getAbsolutePath();
                 appController.setImage(SwingFXUtils.toFXImage(this.outputImage, null), tempFilePath);
+                this.moreFilters.setDisable(true);
 
             } catch (IOException e) {
                 e.printStackTrace();

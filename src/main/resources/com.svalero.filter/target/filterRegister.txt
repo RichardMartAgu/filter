@@ -268,3 +268,12 @@ istockphoto-816134422-1024x1024.jpg	BrighterFilter	10/01/2024 17:23:46
 filtered_image4314347011374883154.png	InvertColorFilter	10/01/2024 17:24:16
 avion.jpg	GrayscaleFilter	23/01/2024 21:56:41
 avion.jpg	GrayscaleFilter	23/01/2024 22:06:23
+filtered_image1147948860890038048.png	BrighterFilter	23/01/2024 22:12:18
+filtered_image16903718332391787790.png	InvertColorFilter	23/01/2024 22:12:38
+avion.jpg	BrighterFilter	23/01/2024 22:14:24
+filtered_image119702584022406048.png	GrayscaleFilter	23/01/2024 22:14:40
+filtered_image2498183250200803911.png	ColorTintFilter	23/01/2024 22:14:58
+filtered_image7156787208641505407.png	SepiaFilter	23/01/2024 22:15:12
+filtered_image13860856584795204881.png	ColorTintFilter	23/01/2024 22:15:24
+filtered_image13860856584795204881.png	GrayscaleFilter,BrighterFilter,SepiaFilter,InvertColorFilter,ColorTintFilter	23/01/2024 22:15:40
+filtered_image739481953091564482.png	GrayscaleFilter,BrighterFilter,SepiaFilter,InvertColorFilter,ColorTintFilter	23/01/2024 22:15:53

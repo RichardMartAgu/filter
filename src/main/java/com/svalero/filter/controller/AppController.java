@@ -2,8 +2,8 @@ package com.svalero.filter.controller;
 
 import com.svalero.filter.model.FilterItem;
 import com.svalero.filter.utils.FilterFile;
-import com.svalero.filter.utils.ShowAlert;
 import com.svalero.filter.utils.IsImage;
+import com.svalero.filter.utils.ShowAlert;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -19,7 +19,8 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -14,7 +14,7 @@ public class App extends Application {
 
     @Override
     public void init() throws Exception {
-        System.out.println("Starting JavaFX Application");
+        System.out.println("Hello, Starting JavaFX Application");
         super.init();
     }
 
@@ -60,7 +60,7 @@ public class App extends Application {
         loader.setController(new AppController());
         Scene scene = new Scene(loader.load());
         mainStage.setScene(scene);
-        mainStage.setTitle("Filters Aplication");
+        mainStage.setTitle("Filters Application");
         mainStage.show();
 
     }
