@@ -35,6 +35,8 @@ public class FilterTask extends Task<BufferedImage> {
             for (int x = 0; x < image.getWidth(); x++) {
                 Color color = new Color(image.getRGB(x, y));
                 for (String selectedFilter : this.selectedFilters) {
+                    if (selectedFilter.equals("BlurFilter"))
+                        color = BlurFilter.apply(image, x, y);
                     if (selectedFilter.equals("GrayscaleFilter"))
                         color = GrayscaleFilter.apply(color);
                     if (selectedFilter.equals("BrighterFilter"))
@@ -45,6 +47,7 @@ public class FilterTask extends Task<BufferedImage> {
                         color = InvertColorFilter.apply(color);
                     if (selectedFilter.equals("ColorTintFilter"))
                         color = ColorTintFilter.apply(color);
+
 
                 }
                 image.setRGB(x, y, color.getRGB());

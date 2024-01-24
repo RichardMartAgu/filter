@@ -76,7 +76,7 @@ public class AppController implements Initializable {
         tableView.setVisible(false);
 
         tabFilters.setTabClosingPolicy(TabPane.TabClosingPolicy.ALL_TABS);
-        this.filterListView.getItems().addAll("GrayscaleFilter", "BrighterFilter", "SepiaFilter", "InvertColorFilter", "ColorTintFilter");
+        this.filterListView.getItems().addAll("BlurFilter","GrayscaleFilter", "BrighterFilter", "SepiaFilter", "InvertColorFilter", "ColorTintFilter");
         this.filterListView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
 //        Inicializa el tableView del historial

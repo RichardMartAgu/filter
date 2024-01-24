@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Últimos ajustes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BlurFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/filters/BrighterFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/task/FilterTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706088477725</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Últimos ajustes.">
+      <created>1706089957913</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706089957913</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
