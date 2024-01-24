@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Hacer un undo de la imagen.">
+    <list default="true" id="3a53a8c5-d4b7-46e2-8718-9379deb236db" name="Changes" comment="Últimos ajustes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svalero/filter/controller/FilterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/controller/filterPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.svalero.filter/target/filterRegister.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +47,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/richa/IdeaProjects/segundodam/filter"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/richa/IdeaProjects/segundodam/filter&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.svalero.filter.utils" />
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706044277447</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Últimos ajustes.">
+      <created>1706088477725</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706088477725</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +188,7 @@
     <MESSAGE value="Añadir un máximo de pestañas al tabpane." />
     <MESSAGE value="Ajustes finales." />
     <MESSAGE value="Hacer un undo de la imagen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hacer un undo de la imagen." />
+    <MESSAGE value="Últimos ajustes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Últimos ajustes." />
   </component>
 </project>

@@ -277,3 +277,22 @@ filtered_image7156787208641505407.png	SepiaFilter	23/01/2024 22:15:12
 filtered_image13860856584795204881.png	ColorTintFilter	23/01/2024 22:15:24
 filtered_image13860856584795204881.png	GrayscaleFilter,BrighterFilter,SepiaFilter,InvertColorFilter,ColorTintFilter	23/01/2024 22:15:40
 filtered_image739481953091564482.png	GrayscaleFilter,BrighterFilter,SepiaFilter,InvertColorFilter,ColorTintFilter	23/01/2024 22:15:53
+avion.jpg	BrighterFilter	24/01/2024 10:29:28
+descarga.jpeg	BrighterFilter	24/01/2024 10:29:28
+istockphoto-816134422-1024x1024.jpg	BrighterFilter	24/01/2024 10:29:28
+imagen_editada 1.png	BrighterFilter	24/01/2024 10:31:44
+avion.jpg	InvertColorFilter	24/01/2024 10:31:48
+descarga.jpeg	InvertColorFilter	24/01/2024 10:31:48
+istockphoto-816134422-1024x1024.jpg	InvertColorFilter	24/01/2024 10:31:48
+filtered_image216283235945519358.png	SepiaFilter	24/01/2024 10:32:19
+filtered_image216283235945519358.png	SepiaFilter	24/01/2024 10:32:37
+avion.jpg	SepiaFilter	24/01/2024 10:45:34
+avion.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	24/01/2024 10:46:34
+descarga.jpeg	GrayscaleFilter,BrighterFilter,SepiaFilter	24/01/2024 10:46:34
+istockphoto-816134422-1024x1024.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	24/01/2024 10:46:34
+filtered_image17324031644816322480.png	GrayscaleFilter,BrighterFilter,SepiaFilter	24/01/2024 10:47:36
+istockphoto-816134422-1024x1024.jpg	GrayscaleFilter,BrighterFilter,SepiaFilter	24/01/2024 10:48:44
+avion.jpg	BrighterFilter	24/01/2024 10:49:24
+avion.jpg	SepiaFilter	24/01/2024 10:50:08
+filtered_image2330829030964163740.png	GrayscaleFilter	24/01/2024 10:50:31
+filtered_image2413816793100383610.png	SepiaFilter,InvertColorFilter,ColorTintFilter	24/01/2024 10:50:46

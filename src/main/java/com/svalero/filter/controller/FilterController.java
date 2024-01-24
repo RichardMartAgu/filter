@@ -37,7 +37,8 @@ public class FilterController implements Initializable {
     private Button moreFilters;
     @FXML
     private Button undoButton;
-
+    @FXML
+    private Button redoButton;
 
     private File sourceImage;
     private List<String> selectedFilters;
@@ -76,6 +77,7 @@ public class FilterController implements Initializable {
             save.setDisable(true);
             undoButton.setDisable(true);
             moreFilters.setDisable(true);
+            redoButton.setDisable(true);
 
             filterTask.stateProperty().addListener((observableValue, oldState, newState) -> {
                 if (newState == Worker.State.SUCCEEDED) {
@@ -135,11 +137,22 @@ public class FilterController implements Initializable {
             Image image = SwingFXUtils.toFXImage(originalImage, null);
             this.targetImageView.setImage(image);
             this.undoButton.setDisable(true);
+            this.redoButton.setDisable(false);
             this.outputImage = originalImage;
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    @FXML
+    private void redoFilters() {
+
+        this.outputImage = filterTask.getValue();
+        Image image = SwingFXUtils.toFXImage(outputImage, null);
+        this.targetImageView.setImage(image);
+        this.redoButton.setDisable(true);
+        this.undoButton.setDisable(false);
+
     }
 
     @FXML
@@ -151,7 +164,6 @@ public class FilterController implements Initializable {
                 ImageIO.write(this.outputImage, "png", tempFile);
                 String tempFilePath = tempFile.getAbsolutePath();
                 appController.setImage(SwingFXUtils.toFXImage(this.outputImage, null), tempFilePath);
-                this.moreFilters.setDisable(true);
 
             } catch (IOException e) {
                 e.printStackTrace();
